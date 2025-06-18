@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mary Lavanya Thumma | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mary Lavanya | Portfolio</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-    }
     body {
-      background-color: #1e1e2f;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1e1f26;
       color: #fff;
-      padding: 2rem;
     }
     header {
       text-align: center;
-      margin-bottom: 3rem;
+      padding: 3rem 1rem;
+      background-color: #282a36;
     }
-    h1 {
+    header h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
-    p {
+    header p {
+      color: #ccc;
       font-size: 1.1rem;
-      color: #bbb;
     }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
     .card {
-      background-color: #292942;
-      border-radius: 10px;
+      background-color: #2c2f40;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
     }
     .card:hover {
       transform: scale(1.03);
@@ -49,33 +47,38 @@
       height: 180px;
       object-fit: cover;
     }
-    .card-body {
-      padding: 1rem;
+    .card-content {
+      padding: 1.5rem;
     }
-    .card-title {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-      color: #ffd700;
+    .card-content h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #facc15;
     }
-    .card-text {
-      font-size: 0.95rem;
+    .card-content p {
       color: #ccc;
-      margin-bottom: 1rem;
+      font-size: 0.95rem;
     }
     .btn {
       display: inline-block;
-      padding: 0.5rem 1rem;
-      background: #ffd700;
-      color: #1e1e2f;
+      margin-top: 1rem;
+      padding: 0.5rem 1.2rem;
+      background-color: #facc15;
+      color: #000;
       text-decoration: none;
+      border-radius: 8px;
       font-weight: bold;
-      border-radius: 5px;
     }
     footer {
-      margin-top: 4rem;
       text-align: center;
+      padding: 2rem;
+      background-color: #282a36;
       color: #aaa;
-      font-size: 0.9rem;
+    }
+    footer a {
+      color: #facc15;
+      margin: 0 1rem;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -87,17 +90,20 @@
 
   <section class="projects">
     <div class="card">
-      <img src="project_image_1.jpg" alt="Customer Churn Prediction" />
-      <div class="card-body">
-        <h2 class="card-title">Customer Churn Prediction</h2>
-        <p class="card-text">Predict customer churn using a machine learning-powered Streamlit App. Includes model comparison and business insights.</p>
+      <img src="customer-churn-banner.jpg" alt="Customer Churn Project">
+      <div class="card-content">
+        <h3>Customer Churn Prediction</h3>
+        <p>Predict churn using a Streamlit-powered app. Includes model comparison, customer segmentation and actionable insights.</p>
         <a href="https://customer-churn-prediction-machine-learning-app-qx8zr32djftfbyz.streamlit.app/" class="btn" target="_blank">View Live App</a>
       </div>
     </div>
+    <!-- Add more projects here as needed -->
   </section>
 
   <footer>
-    <p>Contact: mary@example.com | <a href="https://github.com/marylavanya" style="color: #ffd700;">GitHub</a> | <a href="https://linkedin.com/in/marylavanya" style="color: #ffd700;">LinkedIn</a></p>
+    <p>Contact: mary@example.com</p>
+    <a href="https://github.com/marylavanya" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/YOUR-LINK" target="_blank">LinkedIn</a>
   </footer>
 </body>
 </html>
